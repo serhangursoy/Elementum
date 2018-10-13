@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Elementum Collaboration - Free Collaboration Tool</title>
+    <!-- Favicon -->
+    <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <!-- Icons -->
+    <link href="./assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
+    <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Argon CSS -->
+    <link type="text/css" href="./assets/css/argon.css?v=1.0.1" rel="stylesheet">
+    <!-- Docs CSS -->
+    <link type="text/css" href="./assets/css/docs.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- shape Hero --><div class="header">
+    <div id="electron-titlebar" class="drag inset dark titlebar-stick bg-default" ><div style="width: 100%; height: 100%; text-align: center; line-height: 40px; ">Elementum</div></div>
+  </div>
+  <div class="container">
+    <main>
+    <div id="alertArea"> </div>
+      <div class="position-relatives" >
+        <section class="section-shaped pb-250">
+          <div class="shape shape-style-1 shape-default">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="container-fluid py-lg-md d-flex">
+            <div class="col px-0">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h1 class="display-3  text-white">Elementum <span> a free collaboration tool</span>
+                  </h1>
+                  <p class="lead  text-white">Gather your team. Sync up. Make it right. Change the world! <span>For good..</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SVG separator -->
+          <div class="separator separator-bottom separator-skew">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+          </div>
+        </section>
+        <!-- 1st Hero Variation -->
+      </div>
+      <section class="section section-lg pt-lg-0 mt--300">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <div class="col-lg-12">
+              <div class="row row-grid">
+                <div class="col-lg-6">
+                  <div class="card card-lift--hover shadow border-0">
+                    <div class="card-body py-5">
+                      <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
+                        <i class="ni ni-check-bold"></i>
+                      </div>
+                      <h6 class="text-primary text-uppercase">Join Your Elementum Team</h6>
+                      <p class="description mt-3">With the given Elementum link, you can be part of your team right away!</p>
+                      <a href="#" class="btn btn-primary mt-4">Enter Link</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card card-lift--hover shadow border-0">
+                    <div class="card-body py-5">
+                      <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
+                        <i class="ni ni-istanbul"></i>
+                      </div>
+                      <h6 class="text-success text-uppercase">Create A Hub</h6>
+                      <p class="description mt-3">Go and build your own hub with your own fresh database. Team up, change the world! Or go and join existing Hub</p>
+                      <a href="#" class="btn btn-success mt-4" data-toggle="modal" data-target="#modal-form">Create Hub</a>
+                      <a href="#" class="btn btn-success mt-4" id="existingHubButton">Existing Hub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+</div>
+      <script>
+        require('./renderer.js')
+      </script>
+      <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-sm" role="document">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <div class="card bg-secondary shadow border-0">
+                <div class="card-body px-lg-5 py-lg-5">
+                  <div class="text-center text-muted mb-4">
+                    <h6 class="text-success text-uppercase">Hub Setup</h6>
+                  </div>
+                  <form role="form">
+                    <div class="form-group mb-3">
+                      <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                        </div>
+                        <input class="form-control" placeholder="Username.." type="text" id="usernameFieldCreator" required>
+                      </div>
+                      <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="ni ni-lock-circle"></i></span>
+                        </div>
+                        <input class="form-control" placeholder="Password.." type="text" id="passwordField" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                        </div>
+                        <textarea class="form-control" placeholder="Firebase Credentials.." text="Firebase Credentials.." rows="10" id="dbCredField"> </textarea>
+                      </div>
+                    </div>
+                    <div class="custom-control custom-control-alternative custom-checkbox">
+                      <input class="custom-control-input" id=" customCheckLogin" type="checkbox" checked>
+                      <label class="custom-control-label" for=" customCheckLogin">
+                        <span>Remember me</span>
+                      </label>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-success my-4" id="createHubButton">Create Hub</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script src="./assets/vendor/jquery/jquery.min.js"></script>
+   <script src="./assets/vendor/popper/popper.min.js"></script>
+   <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+   <script src="./assets/vendor/headroom/headroom.min.js"></script>
+   <!-- Optional JS -->
+   <script src="./assets/vendor/onscreen/onscreen.min.js"></script>
+   <script src="./assets/vendor/nouislider/js/nouislider.min.js"></script>
+   <script src="./assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+   <!-- Argon JS -->
+   <script src="./assets/js/argon.js?v=1.0.1"></script>
+
+<!-- Insert this line after script imports -->
+<script>if (window.module) module = window.module;</script>
+
+  </body>
+
+</html>
