@@ -1,28 +1,42 @@
-# electron-quick-start
+# Elementum - WIP
 
-**Clone and run for a quick way to see Electron in action.**
+**Working In Project -- Not Done**
 
-This is a minimal Electron application based on the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start) within the Electron documentation.
+This is a minimal Electron application that is designed for collaboration tool for software developers. It's inspired from the current development tools. However, it's one of the best advantage is that, all data is stored in _your_ own Firebase account. And this is only required if you are the creator of that team. If you are a team member, you should just go and enter your given hashed link and your are done!
 
-**Use this app along with the [Electron API Demos](https://electronjs.org/#get-started) app for API code examples to help you get started.**
+A basic Elementum application needs just these files:
+- `Elementum Core Application` - This does the whole big stuff. Handles REST requests and UI side.
+- `Firebase Account (If Distributor)` - If you are the creator of the Team, you need to link your Firebase account so others can use it as well.
+- `Elementum Key (If Team Member)` - Get your key, sign-in and you are done. Now you are part of a team.
 
-A basic Electron application needs just these files:
+## Motivation
+Collaboration is required if you are working as a group on a project. Current collaboration tools are great. However, if your team is really small, then those tools become extremely useless with it's tons of features. Furthermore, some collaboration tools are really expensive for small teams. So I decided to create a simple, easy, light collaboration tool for everyone.
+I decided not to keep any server ( and user data ) not to work on latest GPDR. So, in theory, there is **no data limit**, for all users. Because everyone will use their Firebase account.
 
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
+## Features   
+I'm planning to add some Features most of them sound kinda basic,
+- Dynamic Setup Structure for every Firebase Account( Only for data storage )
+- Dashboard for both Users and Admin to track Project's status
+- Assignment Creation - Assigning to User Functions
+- Messaging System - Both messaging groups and user-to-user private chat
+- Project Related Stuff Share and Post Walls
+---------------- Below is **planned** features ----------------
+- Git version tracker. Commit logger.
+- User performance reporter
+- ML backed suggestions for project
 
-You can learn more about each of these components within the [Quick Start Guide](https://electronjs.org/docs/tutorial/quick-start).
 
-## To Use
+## Usage
+I will add instructions with _cute_ step-by-step like screenshots when project is done.
 
-To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+## Developing
+Clone this, do your magic
 
 ```bash
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/serhangursoy/Elementum
 # Go into the repository
-cd electron-quick-start
+cd Elementum
 # Install dependencies
 npm install
 # Run the app
@@ -30,16 +44,3 @@ npm start
 ```
 
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
-
-## Resources for Learning Electron
-
-- [electronjs.org/docs](https://electronjs.org/docs) - all of Electron's documentation
-- [electronjs.org/community#boilerplates](https://electronjs.org/community#boilerplates) - sample starter apps created by the community
-- [electron/electron-quick-start](https://github.com/electron/electron-quick-start) - a very basic starter Electron app
-- [electron/simple-samples](https://github.com/electron/simple-samples) - small applications with ideas for taking them further
-- [electron/electron-api-demos](https://github.com/electron/electron-api-demos) - an Electron app that teaches you how to use Electron
-- [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
-
-## License
-
-[CC0 1.0 (Public Domain)](LICENSE.md)
