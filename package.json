@@ -17,7 +17,7 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^3.0.4"
+    "electron": "^7.2.4"
   },
   "dependencies": {
     "cryptiles": "^4.1.2",
